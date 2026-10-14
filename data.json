@@ -1,0 +1,88 @@
+
+{
+  "app": {
+    "name": "MUTUA",
+    "slogan": "Aprende, enseña y comparte",
+    "description": "Una comunidad para intercambiar habilidades y conocimientos.",
+    "version": "1.0.0",
+    "language": "es"
+  },
+  "categories": [
+    {
+      "id": "creatividad",
+      "name": "Creatividad",
+      "icon": "palette"
+    },
+    {
+      "id": "tecnologia",
+      "name": "Tecnología",
+      "icon": "code"
+    },
+    {
+      "id": "idiomas",
+      "name": "Idiomas",
+      "icon": "languages"
+    },
+    {
+      "id": "bienestar",
+      "name": "Bienestar",
+      "icon": "heart"
+    }
+  ],
+  "skills": [
+    {
+      "id": 1,
+      "name": "Diseño gráfico",
+      "category": "creatividad",
+      "description": "Transforma ideas en piezas visuales.",
+      "type": "aprender",
+      "active": true
+    },
+    {
+      "id": 2,
+      "name": "Programación web",
+      "category": "tecnologia",
+      "description": "Aprende a construir páginas y aplicaciones web.",
+      "type": "intercambiar",
+      "active": true
+    },
+    {
+      "id": 3,
+      "name": "Aprendizaje de idiomas",
+      "category": "idiomas",
+      "description": "Descubre nuevas lenguas y culturas.",
+      "type": "aprender",
+      "active": true
+    },
+    {
+      "id": 4,
+      "name": "Hábitos saludables",
+      "category": "bienestar",
+      "description": "Desarrolla rutinas para tu bienestar.",
+      "type": "ensenar",
+      "active": true
+    },
+    {
+      "id": 5,
+      "name": "Escritura creativa",
+      "category": "creatividad",
+      "description": "Expresa tus ideas a través de las palabras.",
+      "type": "intercambiar",
+      "active": true
+    },
+    {
+      "id": 6,
+      "name": "Herramientas digitales",
+      "category": "tecnologia",
+      "description": "Descubre recursos digitales útiles.",
+      "type": "ensenar",
+      "active": true
+    }
+  ],
+  "settings": {
+    "itemsPerPage": 6,
+    "allowSearch": true,
+    "allowCategoryFilters": true,
+    "maintenanceMode": false
+  }
+}

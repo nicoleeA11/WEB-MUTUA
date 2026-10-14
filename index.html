@@ -1,0 +1,582 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MUTUA: aprende, enseña e intercambia habilidades con otras personas.">
+    <title>MUTUA | Aprende, enseña y comparte</title>
+    ```html
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./app.js" defer></script>
+```
+</head>
+<body>
+
+    <header class="header">
+        <div class="container navbar">
+            <a href="#" class="logo" aria-label="MUTUA, inicio">
+                <span class="logo-icon">M</span>
+                <span>MUTUA<span class="logo-dot">.</span></span>
+            </a>
+
+            <nav class="nav-links" aria-label="Navegación principal">
+                <a href="#inicio" class="nav-link active">Inicio</a>
+                <a href="#explorar" class="nav-link">Explorar habilidades</a>
+                <a href="#recursos" class="nav-link">Recursos</a>
+                <a href="#como-funciona" class="nav-link">Cómo funciona</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button type="button" class="btn btn-outline" id="loginBtn">
+                    Iniciar sesión
+                </button>
+                <button type="button" class="btn btn-primary" id="registerBtn">
+                    Crear cuenta
+                </button>
+            </div>
+
+            <button type="button" class="menu-toggle" id="menuToggle"
+                    aria-label="Abrir menú" aria-expanded="false">
+                ☰
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <span class="eyebrow">
+                        <span class="eyebrow-dot"></span>
+                        APRENDER ES MEJOR EN COMUNIDAD
+                    </span>
+
+                    <h1>
+                        Tú sabes algo.<br>
+                        Alguien más quiere<br>
+                        <span class="gradient-text">aprenderlo.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Intercambia tus habilidades, descubre nuevos talentos
+                        y aprende de otras personas. Aquí todos tenemos algo
+                        que enseñar y mucho por aprender.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#explorar" class="btn btn-primary btn-large">
+                            Explorar habilidades <span aria-hidden="true">→</span>
+                        </a>
+                        <a href="#como-funciona" class="btn btn-light btn-large">
+                            ¿Cómo funciona?
+                        </a>
+                    </div>
+
+                    <div class="hero-social-proof">
+                        <div class="avatar-stack" aria-hidden="true">
+                            <span class="avatar avatar-one">👩🏻</span>
+                            <span class="avatar avatar-two">👨🏽</span>
+                            <span class="avatar avatar-three">👩🏾</span>
+                            <span class="avatar avatar-four">👨🏻</span>
+                        </div>
+                        <p><strong>Aprende a tu manera.</strong><br>
+                            Comparte lo que sabes con los demás.</p>
+                    </div>
+                </div>
+
+                <div class="hero-visual" aria-label="Ejemplos de intercambio de habilidades">
+                    <div class="visual-glow"></div>
+
+                    <div class="floating-card floating-card-top">
+                        <span class="floating-icon purple-icon">✦</span>
+                        <div>
+                            <strong>Aprende algo nuevo</strong>
+                            <span>Un talento a la vez</span>
+                        </div>
+                    </div>
+
+                    <div class="exchange-card">
+                        <div class="exchange-heading">
+                            <span class="status-dot"></span>
+                            <span>UN INTERCAMBIO MUTUO</span>
+                        </div>
+
+                        <div class="skill-person">
+                            <div class="person-illustration person-music">🎹</div>
+                            <div class="person-info">
+                                <span class="person-label">ENSEÑA</span>
+                                <strong>Clases de piano</strong>
+                                <span>Por alguien de la comunidad</span>
+                            </div>
+                            <span class="skill-arrow">↗</span>
+                        </div>
+
+                        <div class="exchange-divider">
+                            <span>⇅</span>
+                            <span>INTERCAMBIO DE SABERES</span>
+                        </div>
+
+                        <div class="skill-person">
+                            <div class="person-illustration person-math">📐</div>
+                            <div class="person-info">
+                                <span class="person-label">APRENDE</span>
+                                <strong>Matemáticas</strong>
+                                <span>Compartiendo lo que sabes</span>
+                            </div>
+                            <span class="skill-arrow">↗</span>
+                        </div>
+
+                        <div class="exchange-footer">
+                            <span>✦</span> Tu conocimiento tiene valor
+                        </div>
+                    </div>
+
+                    <div class="floating-card floating-card-bottom">
+                        <span class="floating-icon green-icon">✓</span>
+                        <div>
+                            <strong>Todos podemos enseñar</strong>
+                            <span>Aprender nos conecta</span>
+                        </div>
+                    </div>
+
+                    <span class="decorative-star star-one">✳</span>
+                    <span class="decorative-star star-two">✦</span>
+                    <span class="decorative-circle"></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="benefits-strip">
+            <div class="container benefits-grid">
+                <div class="benefit-item">
+                    <span class="benefit-icon">🤝</span>
+                    <div>
+                        <strong>Intercambia habilidades</strong>
+                        <span>Aprende enseñando</span>
+                    </div>
+                </div>
+
+                <div class="benefit-item">
+                    <span class="benefit-icon">📚</span>
+                    <div>
+                        <strong>Comparte recursos</strong>
+                        <span>Materiales para aprender</span>
+                    </div>
+                </div>
+
+                <div class="benefit-item">
+                    <span class="benefit-icon">💬</span>
+                    <div>
+                        <strong>Conecta con personas</strong>
+                        <span>Aprende en comunidad</span>
+                    </div>
+                </div>
+
+                <div class="benefit-item">
+                    <span class="benefit-icon">🌱</span>
+                    <div>
+                        <strong>Crece a tu ritmo</strong>
+                        <span>Descubre nuevas capacidades</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section skills-section" id="explorar">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <span class="section-eyebrow">DESCUBRE TU PRÓXIMO APRENDIZAJE</span>
+                        <h2>¿Qué te gustaría <span class="gradient-text">aprender?</span></h2>
+                        <p>Encuentra personas que compartan lo que buscas.</p>
+                    </div>
+
+                    <a href="#publicar" class="text-link">
+                        Comparte una habilidad <span>→</span>
+                    </a>
+                </div>
+
+                <div class="search-panel">
+                    <label class="search-box" for="skillSearch">
+                        <span class="search-icon">⌕</span>
+                        <input type="search" id="skillSearch"
+                               placeholder="Busca una habilidad, por ejemplo: inglés, dibujo...">
+                    </label>
+
+                    <label class="select-box" for="categoryFilter">
+                        <span class="filter-icon">☷</span>
+                        <select id="categoryFilter">
+                            <option value="all">Todas las categorías</option>
+                            <option value="idiomas">Idiomas</option>
+                            <option value="musica">Música</option>
+                            <option value="tecnologia">Tecnología</option>
+                            <option value="academico">Académico</option>
+                            <option value="arte">Arte y creatividad</option>
+                            <option value="bienestar">Bienestar</option>
+                            <option value="otros">Otros</option>
+                        </select>
+                    </label>
+
+                    <button type="button" class="btn btn-primary search-button" id="searchBtn">
+                        Buscar
+                    </button>
+                </div>
+
+                <div class="category-list" id="categoryList">
+                    <button type="button" class="category-chip selected" data-category="all">
+                        ✨ Todas
+                    </button>
+                    <button type="button" class="category-chip" data-category="idiomas">
+                        🌎 Idiomas
+                    </button>
+                    <button type="button" class="category-chip" data-category="musica">
+                        🎵 Música
+                    </button>
+                    <button type="button" class="category-chip" data-category="tecnologia">
+                        💻 Tecnología
+                    </button>
+                    <button type="button" class="category-chip" data-category="academico">
+                        📖 Académico
+                    </button>
+                    <button type="button" class="category-chip" data-category="arte">
+                        🎨 Arte y creatividad
+                    </button>
+                    <button type="button" class="category-chip" data-category="bienestar">
+                        🌿 Bienestar
+                    </button>
+                </div>
+
+                <div class="skills-grid" id="skillsGrid">
+                    <article class="skill-card" data-category="idiomas" data-search="inglés conversación idiomas">
+                        <div class="skill-card-image skill-image-blue">
+                            <span class="skill-emoji">🌎</span>
+                            <span class="skill-level">Principiante</span>
+                            <button type="button" class="favorite-btn" aria-label="Guardar habilidad">♡</button>
+                        </div>
+                        <div class="skill-card-content">
+                            <span class="skill-category">IDIOMAS</span>
+                            <h3>Inglés conversacional</h3>
+                            <p>Practica conversaciones cotidianas y gana confianza al hablar.</p>
+                            <div class="skill-card-footer">
+                                <div class="mini-profile"><span>👩🏻</span><div><strong>Alexandra</strong><small>Aprendizaje colaborativo</small></div></div>
+                                <button type="button" class="btn btn-small btn-outline contact-btn" data-skill="Inglés conversacional">Conectar</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="skill-card" data-category="musica" data-search="piano música instrumentos">
+                        <div class="skill-card-image skill-image-purple">
+                            <span class="skill-emoji">🎹</span>
+                            <span class="skill-level">Básico</span>
+                            <button type="button" class="favorite-btn" aria-label="Guardar habilidad">♡</button>
+                        </div>
+                        <div class="skill-card-content">
+                            <span class="skill-category">MÚSICA</span>
+                            <h3>Primeros pasos en piano</h3>
+                            <p>Conoce las notas, practica acordes y aprende canciones sencillas.</p>
+                            <div class="skill-card-footer">
+                                <div class="mini-profile"><span>👨🏽</span><div><strong>Daniel</strong><small>Aprendizaje colaborativo</small></div></div>
+                                <button type="button" class="btn btn-small btn-outline contact-btn" data-skill="Primeros pasos en piano">Conectar</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="skill-card" data-category="tecnologia" data-search="programación html css javascript tecnología">
+                        <div class="skill-card-image skill-image-mint">
+                            <span class="skill-emoji">💻</span>
+                            <span class="skill-level">Principiante</span>
+                            <button type="button" class="favorite-btn" aria-label="Guardar habilidad">♡</button>
+                        </div>
+                        <div class="skill-card-content">
+                            <span class="skill-category">TECNOLOGÍA</span>
+                            <h3>Introducción a la programación</h3>
+                            <p>Empieza a crear páginas web con HTML, CSS y JavaScript.</p>
+                            <div class="skill-card-footer">
+                                <div class="mini-profile"><span>👩🏾</span><div><strong>Camila</strong><small>Aprendizaje colaborativo</small></div></div>
+                                <button type="button" class="btn btn-small btn-outline contact-btn" data-skill="Introducción a la programación">Conectar</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="skill-card" data-category="academico" data-search="matemáticas álgebra estudio académico">
+                        <div class="skill-card-image skill-image-peach">
+                            <span class="skill-emoji">📐</span>
+                            <span class="skill-level">Intermedio</span>
+                            <button type="button" class="favorite-btn" aria-label="Guardar habilidad">♡</button>
+                        </div>
+                        <div class="skill-card-content">
+                            <span class="skill-category">ACADÉMICO</span>
+                            <h3>Matemáticas sin miedo</h3>
+                            <p>Refuerza álgebra y resuelve ejercicios paso a paso.</p>
+                            <div class="skill-card-footer">
+                                <div class="mini-profile"><span>👨🏻</span><div><strong>Santiago</strong><small>Aprendizaje colaborativo</small></div></div>
+                                <button type="button" class="btn btn-small btn-outline contact-btn" data-skill="Matemáticas sin miedo">Conectar</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="skill-card" data-category="arte" data-search="dibujo ilustración arte creatividad">
+                        <div class="skill-card-image skill-image-pink">
+                            <span class="skill-emoji">🎨</span>
+                            <span class="skill-level">Todos los niveles</span>
+                            <button type="button" class="favorite-btn" aria-label="Guardar habilidad">♡</button>
+                        </div>
+                        <div class="skill-card-content">
+                            <span class="skill-category">ARTE Y CREATIVIDAD</span>
+                            <h3>Dibujo e ilustración</h3>
+                            <p>Explora técnicas de dibujo y desarrolla tu propio estilo.</p>
+                            <div class="skill-card-footer">
+                                <div class="mini-profile"><span>👩🏼</span><div><strong>Valentina</strong><small>Aprendizaje colaborativo</small></div></div>
+                                <button type="button" class="btn btn-small btn-outline contact-btn" data-skill="Dibujo e ilustración">Conectar</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="skill-card" data-category="bienestar" data-search="organización hábitos productividad bienestar">
+                        <div class="skill-card-image skill-image-lavender">
+                            <span class="skill-emoji">🌱</span>
+                            <span class="skill-level">Todos los niveles</span>
+                            <button type="button" class="favorite-btn" aria-label="Guardar habilidad">♡</button>
+                        </div>
+                        <div class="skill-card-content">
+                            <span class="skill-category">BIENESTAR</span>
+                            <h3>Organización y hábitos</h3>
+                            <p>Comparte ideas para organizar tu tiempo y estudiar mejor.</p>
+                            <div class="skill-card-footer">
+                                <div class="mini-profile"><span>🧑🏻</span><div><strong>Andrés</strong><small>Aprendizaje colaborativo</small></div></div>
+                                <button type="button" class="btn btn-small btn-outline contact-btn" data-skill="Organización y hábitos">Conectar</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <p class="empty-state" id="emptySkills" hidden>
+                    No encontramos habilidades con esos criterios. Intenta otra búsqueda.
+                </p>
+            </div>
+        </section>
+
+        <section class="publish-section" id="publicar">
+            <div class="container publish-panel">
+                <div class="publish-copy">
+                    <span class="section-eyebrow">LO QUE SABES IMPORTA</span>
+                    <h2>Tu conocimiento puede ser el comienzo de algo <span class="gradient-text">increíble.</span></h2>
+                    <p>Comparte una habilidad que domines y encuentra personas con quienes intercambiar conocimientos.</p>
+                    <button type="button" class="btn btn-primary btn-large" id="publishBtn">
+                        Publicar mi habilidad <span>→</span>
+                    </button>
+                </div>
+                <div class="publish-art" aria-hidden="true">
+                    <div class="publish-circle"></div>
+                    <div class="publish-note note-one">✦</div>
+                    <div class="publish-note note-two">✎</div>
+                    <div class="publish-note note-three">♡</div>
+                    <div class="publish-main-emoji">💡</div>
+                    <div class="publish-caption">Una idea compartida<br>puede cambiarlo todo.</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section resources-section" id="recursos">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <span class="section-eyebrow">APRENDE A TU PROPIO RITMO</span>
+                        <h2>Recursos para seguir <span class="gradient-text">creciendo.</span></h2>
+                        <p>Materiales que la comunidad comparte para aprender juntos.</p>
+                    </div>
+                    <a href="#compartir-recurso" class="text-link">Compartir un recurso <span>→</span></a>
+                </div>
+
+                <div class="resources-grid" id="resourcesGrid">
+                    <article class="resource-card">
+                        <div class="resource-cover resource-cover-blue">
+                            <span>EN</span><span class="resource-cover-emoji">🌎</span>
+                            <span class="resource-type">GUÍA DE ESTUDIO</span>
+                        </div>
+                        <div class="resource-content">
+                            <span class="resource-category">IDIOMAS</span>
+                            <h3>Inglés para empezar</h3>
+                            <p>Vocabulario básico y expresiones de uso diario.</p>
+                            <a href="#recurso-ingles" class="resource-link">Ver recurso <span>→</span></a>
+                        </div>
+                    </article>
+
+                    <article class="resource-card">
+                        <div class="resource-cover resource-cover-purple">
+                            <span>JS</span><span class="resource-cover-emoji">💻</span>
+                            <span class="resource-type">GUÍA PRÁCTICA</span>
+                        </div>
+                        <div class="resource-content">
+                            <span class="resource-category">TECNOLOGÍA</span>
+                            <h3>Tu primera página web</h3>
+                            <p>Una introducción sencilla a HTML y CSS.</p>
+                            <a href="#recurso-web" class="resource-link">Ver recurso <span>→</span></a>
+                        </div>
+                    </article>
+
+                    <article class="resource-card">
+                        <div class="resource-cover resource-cover-orange">
+                            <span>∑</span><span class="resource-cover-emoji">📐</span>
+                            <span class="resource-type">EJERCICIOS</span>
+                        </div>
+                        <div class="resource-content">
+                            <span class="resource-category">ACADÉMICO</span>
+                            <h3>Matemáticas paso a paso</h3>
+                            <p>Ejercicios para practicar y reforzar conceptos.</p>
+                            <a href="#recurso-matematicas" class="resource-link">Ver recurso <span>→</span></a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="share-resource-panel" id="compartir-recurso">
+                    <div>
+                        <span class="share-resource-icon">📎</span>
+                        <div>
+                            <h3>¿Tienes un recurso útil?</h3>
+                            <p>Comparte guías, apuntes o materiales con la comunidad.</p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-outline" id="shareResourceBtn">
+                        Compartir recurso
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section how-section" id="como-funciona">
+            <div class="container">
+                <div class="section-heading centered-heading">
+                    <span class="section-eyebrow">SENCILLO, COLABORATIVO Y PARA TODOS</span>
+                    <h2>Aprender juntos es muy <span class="gradient-text">fácil.</span></h2>
+                    <p>Cuatro pasos para empezar a intercambiar conocimientos.</p>
+                </div>
+
+                <div class="steps-grid">
+                    <article class="step-card">
+                        <div class="step-number">01</div>
+                        <div class="step-icon step-icon-blue">👤</div>
+                        <h3>Crea tu perfil</h3>
+                        <p>Cuéntale a la comunidad qué sabes y qué quieres aprender.</p>
+                    </article>
+                    <article class="step-card">
+                        <div class="step-number">02</div>
+                        <div class="step-icon step-icon-purple">🔎</div>
+                        <h3>Encuentra una habilidad</h3>
+                        <p>Busca personas que puedan enseñarte algo que te interese.</p>
+                    </article>
+                    <article class="step-card">
+                        <div class="step-number">03</div>
+                        <div class="step-icon step-icon-green">🔄</div>
+                        <h3>Propón un intercambio</h3>
+                        <p>Ofrece tus conocimientos y acuerda cómo aprender juntos.</p>
+                    </article>
+                    <article class="step-card">
+                        <div class="step-number">04</div>
+                        <div class="step-icon step-icon-peach">🚀</div>
+                        <h3>Aprende y comparte</h3>
+                        <p>Conecta, practica y sigue desarrollando tus capacidades.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="final-cta">
+            <div class="container final-cta-content">
+                <span class="cta-sparkle">✦</span>
+                <h2>Lo que sabes puede cambiar<br>lo que alguien más puede lograr.</h2>
+                <p>Haz parte de una comunidad donde todos aprendemos de todos.</p>
+                <button type="button" class="btn btn-white btn-large" id="finalRegisterBtn">
+                    Quiero ser parte de MUTUA <span>→</span>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-main">
+            <div class="footer-brand">
+                <a href="#inicio" class="logo">
+                    <span class="logo-icon">M</span>
+                    <span>MUTUA<span class="logo-dot">.</span></span>
+                </a>
+                <p>Compartimos lo que sabemos.<br>Aprendemos lo que soñamos.</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Explora</h3>
+                <a href="#explorar">Habilidades</a>
+                <a href="#recursos">Recursos</a>
+                <a href="#como-funciona">Cómo funciona</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Comunidad</h3>
+                <a href="#publicar">Enseñar una habilidad</a>
+                <a href="#compartir-recurso">Compartir recursos</a>
+                <a href="#inicio">Volver al inicio</a>
+            </div>
+
+            <div class="footer-column footer-newsletter">
+                <h3>Una comunidad que crece</h3>
+                <p>Un espacio para compartir, aprender y crear nuevas oportunidades.</p>
+                <a href="#inicio" class="text-link">Descubre MUTUA <span>→</span></a>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <span>© 2026 MUTUA. Proyecto educativo.</span>
+            <span>Hecho para aprender en comunidad 💙</span>
+        </div>
+    </footer>
+
+    <div class="modal-overlay" id="modalOverlay" hidden>
+        <section class="modal" role="dialog" aria-modal="true"
+                 aria-labelledby="modalTitle">
+            <button type="button" class="modal-close" id="modalClose"
+                    aria-label="Cerrar ventana">×</button>
+            <div class="modal-brand-mark">M</div>
+            <h2 id="modalTitle">Bienvenido a MUTUA</h2>
+            <p class="modal-description" id="modalDescription">
+                Conecta con personas y descubre nuevas habilidades.
+            </p>
+
+            <form id="accountForm">
+                <div class="form-field" id="nameField" hidden>
+                    <label for="accountName">Nombre</label>
+                    <input type="text" id="accountName" name="name"
+                           placeholder="Tu nombre" autocomplete="name">
+                </div>
+
+                <div class="form-field">
+                    <label for="accountEmail">Correo electrónico</label>
+                    <input type="email" id="accountEmail" name="email"
+                           placeholder="nombre@correo.com"
+                           autocomplete="email" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="accountPassword">Contraseña</label>
+                    <input type="password" id="accountPassword" name="password"
+                           placeholder="Mínimo 8 caracteres"
+                           autocomplete="current-password" minlength="8" required>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-large form-submit"
+                        id="accountSubmit">Continuar</button>
+                <p class="form-message" id="formMessage" role="status"></p>
+            </form>
+
+            <p class="modal-switch" id="modalSwitch">
+                ¿Aún no tienes cuenta?
+                <button type="button" id="switchAccountMode">Regístrate</button>
+            </p>
+        </section>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+</body>
+</html>
+```
